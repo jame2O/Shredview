@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/mapbox-gl": "^3.1.0",
     "bootstrap": "^5.3.3",
     "browserify": "^17.0.0",
     "mapbox-gl": "^3.4.0",
