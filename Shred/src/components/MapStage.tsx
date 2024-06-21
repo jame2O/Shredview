@@ -7,8 +7,8 @@ function MapStage() {
 
   const mapContainer = useRef<any>(null);
   const map = useRef<mapboxgl.Map | null>(null);
-  const [lng, setLng] = useState(-70.9);
-  const [lat, setLat] = useState(42.35);
+  const [lng, setLng] = useState(-0.1274);
+  const [lat, setLat] = useState(51.5067);
   const [zoom, setZoom] = useState(9);
 
   useEffect(() => {
@@ -19,8 +19,17 @@ function MapStage() {
       center: [lng, lat],
       zoom: zoom
     });
+    //update map on interaction
+    map.current.on('move', () => {
+    setLng(map.current!.getCenter().lng);
+    setLat(map.current!.getCenter().lat);
+    setZoom(map.current!.getZoom());
+    console.log(`${lng} & ${lat}`)
   });
-
+  });
+  
+  
+  
   return (
     <div>
       <div ref={mapContainer} className="map-container" />
