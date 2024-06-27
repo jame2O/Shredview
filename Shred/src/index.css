@@ -5,19 +5,13 @@
     font-weight: normal;
 }
 * {
-    background-color: #FAFAFA;
-}
-h1, h2, p, li {
     font-family: "Manrope";
-    padding: 5px;
-}
-.Title {
-    font-size: 50px;
-    font-weight: bold;
 }
 #creator {
     font-weight: bold;
     font-style: italic;
+    font-size: larger;
+    padding-bottom: 20px;
 }
 #dataLbl {
     font-weight: bold;
@@ -26,17 +20,9 @@ h1, h2, p, li {
     margin-left: 10px;
 }
 .map-container {
-    height: 400px;
+    height: 100vh;
+    width: 85vw;
   }
-.sidebar {
-background-color: rgb(35 55 75 / 90%);
-color: #fff;
-padding: 6px 12px;
-font-family: monospace;
-z-index: 1;
-position: absolute;
-top: 0;
-left: 0;
-margin: 12px;
-border-radius: 4px;
-    }
+svg {
+    background-color: transparent;
+}

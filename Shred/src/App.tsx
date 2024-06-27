@@ -4,15 +4,16 @@ import MapStage from "./components/MapStage";
 
 function App() {
   return (
-    <div className="container">
+    <div>
       <div className="row">
-         <TitleBar />  
-      </div>
-      <div className="row">
-        <Sidebar />
-      </div>
-      <div className="row">
-        <MapStage />
+        <div className="col-2">
+          <TitleBar />
+          <Sidebar />
+        </div>
+        <div className="col-8">
+          <MapStage />
+        </div>
+        
       </div>
     </div>
   );

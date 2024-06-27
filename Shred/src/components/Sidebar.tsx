@@ -1,22 +1,21 @@
 import {useState} from "react";
 import "../index.css";
-import searchIcon from "../assets/search.svg";
 import gradientIcon from "../assets/gradientIcon.png";
 import stIcon from "../assets/surfaceType.svg";
 import elevationIcon from "../assets/elevation.png";
 import featuresIcon from "../assets/features.svg";
 import effortScoreIcon from "../assets/effortScore.svg";
 
+
+
+
 function Sidebar() {
-    const [checked, setChecked] = useState(false);
+    const [] = useState(false);
     return (
         <div>
-            <h2>Find Trails: </h2>
+             
+            <h2>Display Options: </h2>
             <div className="input-group mb-3">
-                <span className="input-group-text" id="basic-addon1">
-                    <img width="15" src={searchIcon} />
-                </span>
-                <input type="text" className="searchBox" placeholder="Trail Name / Location" aria-label="searchBox" aria-describedby="basic-addon1"/>
             </div>
             <div>
                 <ul className="options">
@@ -56,6 +55,8 @@ function Sidebar() {
                         </span>
                     </li>
                 </ul>
+
+
             </div>
         </div>
     );
